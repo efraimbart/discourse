@@ -8,6 +8,9 @@ import { userPath } from "discourse/lib/url";
 
 export default Component.extend({
   usersTemplates: computed("users.[]", function () {
+    // debugger
+    // window.parent && window.parent.location.reload();
+    console.log("this is a test")
     return (this.users || []).map((user) => {
       let name = user.name;
       let username = user.username;
